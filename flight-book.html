@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Booking - Clahan-Products</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/validations.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Book Your Flight</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <!-- add other links as in index.html -->
+        </nav>
+    </header>
+
+    <main>
+        <form id="flightForm" onsubmit="return validateFlightForm()">
+            <label>First Name: <input type="text" id="firstName" required></label>
+            <label>Last Name: <input type="text" id="lastName" required></label>
+            <label>Email ID: <input type="email" id="email" required></label>
+            <label>Source: <input type="text" id="source" required></label>
+            <label>Destination: <input type="text" id="destination" required></label>
+            <label>Price: <input type="number" id="price" required></label>
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+</body>
+</html>
