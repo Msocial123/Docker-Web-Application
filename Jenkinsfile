@@ -45,7 +45,7 @@ environment{
             }
         }
         
-    #stage('Image push to Docker Hub'){
+    stage('Image push to Docker Hub'){
             steps{
                 script{
                         withCredentials([usernamePassword(credentialsId: "${DOCKER_REGISTRY_CREDENTIALS}", passwordVariable: 'DOCKER_PASSWORD', usernameVariable: 'DOCKER_USERNAME')]) {
